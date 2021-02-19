@@ -1,18 +1,18 @@
-import React from "react"
-import PropImage from "./../atoms/prop-image"
-import ProjectHeader from "./../atoms/project-header"
-import ProjectDescription from "./../atoms/project-description"
-import LearnMore from "./../atoms/learn-more"
-import "./../global-css/basics.css"
-import "./css/project-card.css"
+import React from "react";
+import PropImage from "./../atoms/prop-image";
+import ProjectHeader from "./../atoms/project-header";
+import ProjectDescription from "./../atoms/project-description";
+import LearnMore from "./../atoms/learn-more";
+import "./../global-css/basics.css";
+import "./css/project-card.css";
 
 class ProjectCard extends React.Component {
   render() {
     const projectCard = this.props.isLight
       ? "projectCardLight"
-      : "projectCardDark"
+      : "projectCardDark";
 
-    const prCard = this.props.isLight ? "card-light" : "card-dark"
+    const prCard = this.props.isLight ? "card-light" : "card-dark";
     return (
       <div className={"container-fluid alignSides " + prCard}>
         {this.props.isLight && (
@@ -45,8 +45,8 @@ class ProjectCard extends React.Component {
           />
         )}
       </div>
-    )
+    );
   }
 }
 
-export default ProjectCard
+export default ProjectCard;
